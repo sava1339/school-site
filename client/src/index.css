@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*:not(.unTrans){
+    transition: all 0.4s ease;
+}
+.app{
+    min-height: 100vh;
+}
+.body{
+    min-height: 720px;
+}
+.App, .maxWidth{
+    max-width: 1408px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textHead, .textHeadButton,.textNav{
+    color:#29ABE2
+}
+.textNav:hover{
+    cursor: pointer;
+    background: #bed3ff;
+    color: white;
+}
+.textHeadButton:hover{
+    cursor: pointer;
+    background: #a7c3ff;
+    color: white;
+    border-color: white;
+}
+.reg{
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .reg{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .reg{
+        width: 99%;
+    }
+}
